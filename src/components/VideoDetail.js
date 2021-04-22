@@ -1,4 +1,5 @@
 import React from 'react'
+import { Typography } from '@material-ui/core'
 
 const VideoDetail = ({ video }) => {
   if (!video) {
@@ -12,8 +13,17 @@ const VideoDetail = ({ video }) => {
         <iframe title="video player" src={videoSrc} />
       </div>
       <div className="ui segment">
-        <h4 className="ui header">{video.snippet.title}</h4>
-        <p>{video.snippet.description}</p>
+        <Typography 
+        variant='h5'
+        gutterbottom='true'
+        >
+          {video.snippet.title}
+        </Typography>
+        <Typography variant='subtitle1'>
+          {video.snippet.description}
+        </Typography>
+        {/* <h4 className="ui header">{video.snippet.title}</h4>
+        <p>{video.snippet.description}</p> */}
       </div>
     </div>
   )

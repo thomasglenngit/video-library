@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Typography, InputLabel, Input } from '@material-ui/core'
 
 const SearchBar = ({ onFormSubmit }) => {
   const [term, setTerm] = useState('')
@@ -11,7 +12,7 @@ const SearchBar = ({ onFormSubmit }) => {
 
   const onSubmit = (event) => {
     event.preventDefault()
-    
+
     onFormSubmit(term)
 
     //TODO: Make sure we call callback from parent
@@ -21,13 +22,17 @@ const SearchBar = ({ onFormSubmit }) => {
     <div className="search-bar ui segment">
       <form onSubmit={onSubmit} className="ui form">
         <div className="field">
-          <label>Video Search:</label>
-          <input
-            type="text"
-            value={term}
-            // onChange={onInputChange} 
-            onChange={(event) => setTerm(event.target.value)}
-            />
+          <InputLabel children="Video Search: Please enter a topic">
+          </InputLabel>
+          <Input
+          type="text"
+          value={term}
+          onChange={(event) => setTerm(event.target.value)}
+          fullWidth
+          placeholder="Ex: Sustainable Development"
+          color='primary'
+          >
+          </Input>
         </div>
       </form>
     </div>
