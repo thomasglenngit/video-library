@@ -3,6 +3,7 @@ import SearchBar from './SearchBar'
 import VideoList from './VideoList'
 import VideoDetail from './VideoDetail'
 import useVideos from '../hooks/useVideos'
+import ButtonAppBar from './AppBar'
 
 const App = () => {
   const [selectedVideo, setSelectedVideo] = useState(null)
@@ -22,6 +23,7 @@ const App = () => {
 
   return (
     <div className="ui container">
+      <ButtonAppBar />
       <SearchBar onFormSubmit={search} />
       <div className="ui grid">
         <div className="ui row">
