@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Typography, InputLabel, Input } from '@material-ui/core'
+import { Typography, InputLabel, Input, FormControl } from '@material-ui/core'
 
 const SearchBar = ({ onFormSubmit }) => {
   const [term, setTerm] = useState('')

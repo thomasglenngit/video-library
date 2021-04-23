@@ -1,5 +1,6 @@
 import React from 'react'
 import VideoItem from './VideoItem'
+import { List } from '@material-ui/core'
 
 const VideoList = ({ videos, onVideoSelect }) => {
   const renderedlist = videos.map(video => {
@@ -9,7 +10,7 @@ const VideoList = ({ videos, onVideoSelect }) => {
       video={video} />
   })
 
-  return <div className="ui relaxed divided list">{renderedlist}</div>
+  return  <div className="ui relaxed divided list">{renderedlist}</div>
 }
 
 export default VideoList
