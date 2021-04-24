@@ -3,12 +3,13 @@ import SearchBar from './SearchBar'
 import VideoList from './VideoList'
 import VideoDetail from './VideoDetail'
 import useVideos from '../hooks/useVideos'
+import Header from './Header'
 import ButtonAppBar from './AppBar'
 import Conversation from './Conversation'
 
 const App = () => {
   const [selectedVideo, setSelectedVideo] = useState(null)
-  const [videos, search] = useVideos('buildings')
+  const [videos, search] = useVideos('sustainable development')
 
   useEffect(() => {
     setSelectedVideo(videos[0])
@@ -25,6 +26,7 @@ const App = () => {
   return (
     <div className="ui container">
       <ButtonAppBar />
+      <Header />
       <Conversation className="ui container" />
       <SearchBar onFormSubmit={search} />
       <div className="ui grid">

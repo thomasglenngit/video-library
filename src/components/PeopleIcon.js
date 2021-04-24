@@ -2,7 +2,7 @@ import React from 'react'
 
 const People = () => {
   return (
-    <img src={'../images/people.png'} alt="a group of business executives"></img>
+    <img className="recycle" src={'http://venture-house.org/wp-content/themes/Avada/images/icons/VTH-WhatAboutSustainability-Icon.png'} alt="a group of business executives"></img>
   )
 }
 

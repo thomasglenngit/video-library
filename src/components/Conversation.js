@@ -1,9 +1,11 @@
 import React from 'react'
+import '../styles/styles.css'
 
 const Conversation = () => {
   return (
-    <div className="ui container" style={{padding: '30px' }}>
-      <p>As part of their Agenda to be accomplished by the year 2030, the 17 Sustainable Development Goals, adopted in 2015 by the United Nations Department of Economic and Social Affairs, include the following: </p>
+    <div className="ui container" style={{ padding: '30px', fontSize: '20px' }}>
+      <h2 className="convo-intro">In 2015, the United Nations Department of Economic and Social Affairs adopted the following 17 Sustainable Development Goals, to be attained by 2030: </h2>
+      <img className="city-sprout" src="http://blog.enterprisetraining.com/wp-content/uploads/2018/06/sustainable-development-government.jpg"></img>
       <p>1.  End poverty in all its forms, everywhere.</p>
       <p>2.  End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
       <p>3.  Ensure healthy lives and promote well-being for all at all ages</p>
@@ -21,8 +23,8 @@ const Conversation = () => {
       <p>15.  Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desert of Acacian, and halt and reverse land degradation and halt biodiversity loss.</p>
       <p>16.  Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels. </p>
       <p>17.  Strengthen the means of implementation and revitalize the global partnership for sustainable development.</p>
-
-    </div>
+      
+    </div >
 
   )
 }

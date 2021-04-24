@@ -1,0 +1,26 @@
+.header {
+  background-image: url('https://i.unu.edu/media/unu.edu/attachment/95787/SDEX-07.png');
+  height: 500px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+  color: #FFF;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  padding: 30px;
+}
+
+.convo-intro {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.city-sprout {
+  width: 400px;
+  float: right;
+}
+
+.recycle {
+  width: 100px;
+}
