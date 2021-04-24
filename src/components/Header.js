@@ -12,9 +12,9 @@ const Header = () => {
         Find inspiration here.
       </p>
       <button className="ui button green"><a href=""></a>watch</button>
-      <button className="ui button inverted primary">watch</button>
-
-
+      {/* <button className="ui button inverted green" window.location.href='#play-position'>Play</button> */}
+      <button className="ui button olive" onclick="window.location.href='#watch'">watch</button>
+      <button className="ui button inverted teal">watch</button>
     </div>
 
   )
