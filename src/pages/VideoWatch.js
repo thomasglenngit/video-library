@@ -15,7 +15,8 @@ const VideoWatch = () => {
 
   return (
   <div className="ui container">
-    Discover how businesses and 
+    <p className="video-intro">Discover how business enterprises are moving to clean development: </p>
+    
   <SearchBar onFormSubmit={search} />
       <div className="ui grid">
         <div className="ui row">
