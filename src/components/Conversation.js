@@ -5,7 +5,7 @@ const Conversation = () => {
   return (
     <div className="ui container" style={{ padding: '30px', fontSize: '20px' }}>
       <h2 className="convo-intro">In 2015, the United Nations Department of Economic and Social Affairs adopted the following 17 Sustainable Development Goals, to be attained by 2030: </h2>
-      <img className="city-sprout" src="http://blog.enterprisetraining.com/wp-content/uploads/2018/06/sustainable-development-government.jpg"></img>
+      <img className="city-sprout" src="http://blog.enterprisetraining.com/wp-content/uploads/2018/06/sustainable-development-government.jpg" alt=""></img>
       <p>1.  End poverty in all its forms, everywhere.</p>
       <p>2.  End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</p>
       <p>3.  Ensure healthy lives and promote well-being for all at all ages</p>

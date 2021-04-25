@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Router, Route, Switch } from 'react-router-dom';
 import SearchBar from './SearchBar'
 import VideoList from './VideoList'
 import VideoDetail from './VideoDetail'
@@ -6,6 +7,9 @@ import useVideos from '../hooks/useVideos'
 import Header from './Header'
 import ButtonAppBar from './AppBar'
 import Conversation from './Conversation'
+import VideoWatch from '../pages/VideoWatch'
+import Footer from '../components/Footer'
+import history from '../history';
 
 const App = () => {
   const [selectedVideo, setSelectedVideo] = useState(null)
@@ -17,33 +21,23 @@ const App = () => {
 
   //    setSelectedVideo(response.data.items[0])
 
-
-
   // const onVideoSelect = (video) => { //moved to inline function
   //   setSelectedVideo(video)
   // }
 
   return (
-    <div className="ui container">
+    <div >
       <ButtonAppBar />
-      <Header />
+      <Router history={history}>
+        <Header />
+        <Route path="/" />
+        <Route path="/pages/watch" exact component={VideoWatch} />
+      </Router>
       <Conversation className="ui container" />
-      <SearchBar onFormSubmit={search} />
-      <div className="ui grid">
-        <div className="ui row">
-          <div className="ten wide column">
-            <VideoDetail video={selectedVideo} />
-          </div>
-          <div className="six wide column">
-            <VideoList
-              // onVideoSelect={(video) => setSelectedVideo(video)}// or even better:
-              onVideoSelect={setSelectedVideo}
-              videos={videos}
-            />
-          </div>
-        </div>
-      </div>
+      <Footer/>
     </div>
+    
+
   )
 }
 

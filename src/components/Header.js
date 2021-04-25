@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import { Link } from 'react-router-dom'
 import '../styles/styles.css'
 
+
 const Header = () => {
+
   return (
-    <div className="header">
+    <div id="header" className="ui container">
       <p>One thing is clear, we can do a lot BETTER.</p>
       <p style={{ paddingLeft: '100px' }}>Join our mission.</p>
       <p style={{ paddingLeft: '250px' }}>Let's create a lasting energy TOGETHER.</p>
@@ -11,12 +14,12 @@ const Header = () => {
       <p>
         Find inspiration here.
       </p>
-      <button className="ui button green"><a href=""></a>watch</button>
-      {/* <button className="ui button inverted green" window.location.href='#play-position'>Play</button> */}
-      <button className="ui button olive" onclick="window.location.href='#watch'">watch</button>
-      <button className="ui button inverted teal">watch</button>
+      <div>
+        <Link to="/pages/watch" className="watch-button">
+          <button className="massive ui button green">watch</button>
+      </Link>
+      </div>
     </div>
-
   )
 }
 
