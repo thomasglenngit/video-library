@@ -1,6 +1,5 @@
 import axios from 'axios'
 
-
 const KEY = `${process.env.REACT_APP_VIDEO_KEY}`
 
 export default axios.create({

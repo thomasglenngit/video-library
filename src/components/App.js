@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
-import SearchBar from './SearchBar'
-import VideoList from './VideoList'
-import VideoDetail from './VideoDetail'
-import useVideos from '../hooks/useVideos'
+// import SearchBar from './SearchBar'
+// import VideoList from './VideoList'
+// import VideoDetail from './VideoDetail'
+// import useVideos from '../hooks/useVideos'
 import Header from './Header'
 import ButtonAppBar from './AppBar'
 import Conversation from './Conversation'
@@ -12,12 +12,12 @@ import Footer from '../components/Footer'
 import history from '../history';
 
 const App = () => {
-  const [selectedVideo, setSelectedVideo] = useState(null)
-  const [videos, search] = useVideos('sustainable development')
+  // const [selectedVideo, setSelectedVideo] = useState(null)
+  // const [videos, search] = useVideos('sustainable development')
 
-  useEffect(() => {
-    setSelectedVideo(videos[0])
-  }, [videos])
+  // useEffect(() => {
+  //   setSelectedVideo(videos[0])
+  // }, [videos])
 
   //    setSelectedVideo(response.data.items[0])
 

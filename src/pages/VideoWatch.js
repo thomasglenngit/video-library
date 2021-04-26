@@ -1,4 +1,4 @@
-import React, { useState, useEffect }from 'react'
+import React, { useState, useEffect } from 'react'
 import SearchBar from '../components/SearchBar'
 import VideoList from '../components/VideoList'
 import VideoDetail from '../components/VideoDetail'
@@ -14,10 +14,9 @@ const VideoWatch = () => {
   }, [videos])
 
   return (
-  <div className="ui container">
-    <p className="video-intro">Discover how business enterprises are moving to clean development: </p>
-    
-  <SearchBar onFormSubmit={search} />
+    <div className="ui container">
+      <p className="video-intro">Discover how business enterprises are moving to clean development: </p>
+      <SearchBar onFormSubmit={search} />
       <div className="ui grid">
         <div className="ui row">
           <div className="ten wide column">
@@ -28,12 +27,11 @@ const VideoWatch = () => {
               // onVideoSelect={(video) => setSelectedVideo(video)}// or even better:
               onVideoSelect={setSelectedVideo}
               videos={videos}
-
             />
           </div>
         </div>
       </div>
-      </div>
+    </div>
   )
 }
 

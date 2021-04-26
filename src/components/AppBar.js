@@ -37,19 +37,16 @@ const colorTheme = createMuiTheme({
       contrastText: '#000',
     },
   },
-});
-
-
-
+})
 
 export default function ButtonAppBar() {
   const classes = useStyles();
 
 
   return (
-    <div className={classes.root}>
-      <div className={colorTheme.palette.primary.main}>
-        <AppBar className="ui container" position="static" >
+    <div >
+      <div>
+        <AppBar className={classes.root} position="static" >
           <Toolbar>
             <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
               <People />
