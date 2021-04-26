@@ -8,10 +8,11 @@ const Footer = () => {
       <div className="row">
         <div className="col1">
           <p>Contact:</p>
-          <p>1234 11th Avenue SW</p>
+          <p>123456 11th Avenue SW</p>
           <p>Calgary AB T3P 4H2</p>
           <p>Canada</p>
           <p>403-555-3498</p>
+          <p>info@foreverplanet.io</p>
         </div>
         <div className="col2">
           <p>Links:</p>
@@ -21,9 +22,11 @@ const Footer = () => {
 
         </div>
       </div>
-      <p className="copyright">Copyright © Thomas Glenn 2021</p>
-
-
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+        <p className="copyright">Copyright © Thomas Glenn 2021</p>
     </div>
 
   )
