@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/styles.css'
 
@@ -7,9 +7,9 @@ const Header = () => {
 
   return (
     <div id="header" >
-      <p>One thing is clear, we can do a lot BETTER.</p>
-      <p style={{ paddingLeft: '100px' }}>Join our mission.</p>
-      <p style={{ paddingLeft: '250px' }}>Let's create a lasting energy TOGETHER.</p>
+      <p style={{ paddingLeft: '10%' }}>One thing is clear, we can do a lot BETTER.</p>
+      <p style={{ paddingLeft: '20%' }}>Join our mission.</p>
+      <p style={{ paddingLeft: '30%' }}>Let's create a lasting energy TOGETHER.</p>
       <br></br>
       <p>
         Find inspiration here.
