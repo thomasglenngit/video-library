@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { forwardRef, useRef } from 'react'
 import VideoItem from './VideoItem'
 
-const VideoList = ({ videos, onVideoSelect }) => {
+
+const VideoList = forwardRef(({ videos, onVideoSelect, onClick }, ref ) => {
+  
+
   const renderedlist = videos.map(video => {
     return <VideoItem
       key={video.id.videoId}
@@ -9,7 +12,12 @@ const VideoList = ({ videos, onVideoSelect }) => {
       video={video} />
   })
 
-  return <div className="ui relaxed divided list">{renderedlist}</div>
-}
+  return (
+    <div
+    ref={ref}
+       className="ui relaxed divided list">{renderedlist}
+      </div>
+  )
+})
 
 export default VideoList

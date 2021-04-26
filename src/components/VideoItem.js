@@ -1,5 +1,6 @@
 import './VideoItem.css'
 import React from 'react'
+import { Typography } from '@material-ui/core'
 
 const VideoItem = ({ video, onVideoSelect }) => {
   return (
@@ -9,12 +10,10 @@ const VideoItem = ({ video, onVideoSelect }) => {
         src={video.snippet.thumbnails.medium.url}
         alt={video.snippet.title} />
       <div className="content">
-        <div className="header">
+          <Typography>
           {video.snippet.title}
-        </div>
-
+          </Typography>
       </div>
-
     </div>
   )
 }
