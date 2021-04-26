@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Router, Route, Switch } from 'react-router-dom';
+import React from 'react';
+import { Router, Route } from 'react-router-dom';
 // import SearchBar from './SearchBar'
 // import VideoList from './VideoList'
 // import VideoDetail from './VideoDetail'
